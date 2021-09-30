@@ -3,7 +3,7 @@
 ## Props
 
 | Name               | Default  | Description                                                                                                 |
-| ------------------ | -------- | ----------------------------------------------------------------------------------------------------------- |
+| ------------------ | -------- |-------------------------------------------------------------------------------------------------------------|
 | `placement`        | `bottom` | Preferred placement of the Popper                                                                           |
 | `disableClickAway` | `false`  | Disables automatically closing the Popper when the user clicks away from it                                 |
 | `offsetSkid`       | `0`      | Offset in pixels along the trigger element                                                                  |
@@ -19,6 +19,7 @@
 | `show`             | `null`   | Control the Popper **manually**, other events (click, hover) are ignored if this is set to `true/false`     |
 | `zIndex`           | `9999`   | The z-index of the Popper                                                                                   |
 | `locked`           | `false`  | Lock the Popper into place, it will not flip dynamically when it runs out of space if this is set to `true` |
+| `teleport`         | `null`   | Teleport Popper element to selector specified                                                               |
 
 ## Events
 
