@@ -7,7 +7,7 @@
   >
     <div
       ref="triggerNode"
-      @mouseover="hover && openPopper()"
+      @mouseover="hover && mouseEnter()"
       @click="togglePopper"
       @focus="openPopper"
       @keyup.esc="closePopper"
@@ -18,6 +18,8 @@
     <PopperTeleportWrapper :teleport="teleport">
       <Transition name="fade">
         <div
+          @mouseover="hover && teleport && mouseEnter()"
+          @mouseleave="hover && teleport && mouseLeave()"
           @click="!interactive && closePopper()"
           v-show="shouldShowPopper"
         class="popper"
