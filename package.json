@@ -1,19 +1,21 @@
 {
-  "name": "vue3-popper",
+  "name": "vue3-popper-teleport",
   "version": "1.4.2",
   "author": {
-    "name": "Valgeir Björnsson",
-    "email": "valgeir@hey.com",
-    "url": "https://github.com/valgeirb"
+    "name": "Alexander Seifert",
+    "email": "alex@therightstuff.at",
+    "url": "https://github.com/pants97"
   },
-  "repository": "github:valgeirb/vue3-popper",
-  "homepage": "https://valgeirb.github.io/vue3-popper",
+  "repository": "github:pants97/vue3-popper-teleport",
+  "homepage": "https://pants97.github.io/vue3-popper-teleport",
   "license": "MIT",
-  "description": "A Vue 3 popper component. Uses PopperJS v2.",
+  "description": "A Vue 3 popper component with support for Teleport. Uses PopperJS v2.",
   "keywords": [
     "vue-popper-component",
     "vue-3-popper",
+    "vue-3-popper-teleport",
     "vue-3-popover",
+    "vue-3-popover-teleport",
     "vue-3-popper-SFC",
     "popper-2",
     "vue-3-popper-2"
@@ -29,7 +31,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "dev": "vue-cli-service serve dev/serve.js",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve dev/serve.js",
     "dev:docs": "vitepress dev docs",
     "build:docs": "vitepress build docs",
     "serve:docs": "vitepress serve docs",

@@ -2,9 +2,10 @@
 <img src="https://raw.githubusercontent.com/valgeirb/vue-popper/main/docs/public/popper.svg" height="300px">
 </p>
 
-# vue3-popper
+# vue3-popper-teleport
 
-> A popover component for Vue 3
+> A popover component for Vue 3. A fork of [bperel/vue3-popper](https://github.com/bperel/vue3-popper) which is a fork of [valgeirb/vue3-popper](https://github.com/valgeirb/vue3-popper).
+> I rebased `bperel`'s work on top of `valgeirb` because I wanted to use the most current version of `vue3-popper` with added teleport support at the time of forking, since `z-index` fighting made me go crazy. 
 
 ## Documentation
 
