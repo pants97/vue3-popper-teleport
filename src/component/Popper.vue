@@ -7,7 +7,7 @@
   >
     <div
       ref="triggerNode"
-      @mouseover="hover && mouseEnter()"
+      @mouseover="hover && openPopper()"
       @click="togglePopper"
       @focus="openPopper"
       @keyup.esc="closePopper"
@@ -18,8 +18,8 @@
     <PopperTeleportWrapper :teleport="teleport">
       <Transition name="fade">
         <div
-          @mouseover="hover && teleport && mouseEnter()"
-          @mouseleave="hover && teleport && mouseLeave()"
+          @mouseover="hover && teleport && openPopper()"
+          @mouseleave="hover && teleport && closePopper()"
           @click="!interactive && closePopper()"
           v-show="shouldShowPopper"
         class="popper"
@@ -330,7 +330,7 @@
   }
 
   .popper:hover,
-  .popper:hover > #arrow::before {
+  .popper:hover > :deep(#arrow::before) {
     background: var(--popper-theme-background-color-hover);
   }
 
