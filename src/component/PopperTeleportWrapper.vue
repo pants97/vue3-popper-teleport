@@ -5,21 +5,17 @@
   <slot v-else />
 </template>
 
-<script>
-  import { defineComponent } from "vue";
-  /**
-   * The Popper Teleport Wrapper component.
-   */
-  export default /*#__PURE__*/ defineComponent({
-    name: "PopperTeleportWrapper",
-    props: {
-        /**
-         * Teleport popper element to selector
-         */
-        teleport: {
+<script setup>
+/**
+ * The Popper Teleport Wrapper component.
+ */
+defineProps({
+    /**
+     * Teleport popper element to selector
+     */
+    teleport: {
         type: String,
         default: null,
-        },
     },
-  });
+});
 </script>
